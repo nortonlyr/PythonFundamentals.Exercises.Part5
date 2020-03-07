@@ -1,42 +1,47 @@
-
 def str_len(str_in: str) -> str:
     """
     Given a string parameter, this function should return the length of the parameter.
     """
-    pass  # remove pass statement and implement me
+    a = len(str_in)
+    return a
+    
+    
 
 
 def first_char(str_in: str) -> str:
     """
     Given a string parameter, this function should return the first letter of the parameter.
     """
-    pass  # remove pass statement and implement me
-
+    b = str_in[0]
+    return b
 
 def last_char(str_in: str) -> str:
     """
     Given a string parameter, this function should return the last letter of the parameter..
     """
-    pass  # remove pass statement and implement me
+    c = str_in[-1]
+    return c
 
 
 def input_has_substring(str_in: str, sub_str_in: str) -> bool:
     """
     This function determines if the substring exists within the string. Returns True or False.
     """
-    pass  # remove pass statement and implement me
+    #d = sub_str_in in str_in
+    #return d
+    return sub_str_in in str_in
 
 
 def substring(str_in: str, start: int, stop: int) -> str:
     """
     Returns the substring of a string.
-
     Keyword arguments:
     str_in -- the string in which to generate a substring from
     start -- starting position of the input parameter to start the substring (inclusive)
     stop -- stopping position of the input parameter to stop the substring (exclusive)
     """
-    pass  # remove pass statement and implement me
+    e = str_in[start:stop]
+    return e
 
 
 def opposite_case(str_in: str) -> str:
@@ -45,4 +50,5 @@ def opposite_case(str_in: str) -> str:
     Example: 
     When input = "Python" the function returns "pYTHON"
     """
-    pass  # remove pass statement and implement me
+    f = str_in.swapcase()
+    return f
